@@ -1,0 +1,5 @@
+CREATE TABLE `aac_uuid` (
+  `id` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT 'ID',
+  `no` int(11) NOT NULL DEFAULT '0' COMMENT '序号',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='系统UUID表';

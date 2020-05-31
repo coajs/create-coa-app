@@ -1,0 +1,10 @@
+root = true
+
+[*]
+charset = utf-8
+insert_final_newline = false
+
+[*.ts]
+ij_typescript_import_prefer_absolute_path = true
+ij_typescript_import_sort_members = true
+ij_typescript_import_sort_module_name = true

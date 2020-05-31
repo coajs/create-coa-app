@@ -1,0 +1,28 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "author": "<%= author %>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "PORT=3000 ENV_BASE=config NODE_PATH=run tsc-watch --onSuccess 'node run'",
+    "clean": "rm -rf run*",
+    "build": "rm -rf run* && tsc && NODE_PATH=run NODE_ENV=production node run/build",
+    "serve": "PORT=8000 ENV_BASE=config NODE_PATH=run NODE_ENV=production node run"
+  },
+  "dependencies": {
+    "coa-echo": "^1.0.8",
+    "coa-env": "^1.0.2",
+    "coa-error": "^1.0.3",
+    "coa-helper": "^1.0.5",
+    "coa-mysql": "^1.0.3",
+    "coa-redis": "^1.0.6",
+    "coa-secure": "^1.0.3",
+    "coa-serve": "^1.0.4"
+  },
+  "devDependencies": {
+    "tsc-watch": "^4.2.8",
+    "typescript": "^3.9.3"
+  }
+}
